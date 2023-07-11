@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8" />
+    <title>Alona CV</title>
+</head>
+<body>
+    <h1><strong> Алёна Шаблинская </strong></h1 
+      <style>
+    
+      </style>
+    </head>
+    <body>
+        
+        <img src=20230321_151402.jpg alt="Мое фото" class="my-photo" width="150"
+alt="Здесь находится моё фото">
+<hr>
+    <h1> <strong> О Себе : </strong></h1>
+    <p><em>Я люблю кодить <em></p>
+    <p> Занимаюсь спортом </p>
+    <p>C удовольствием интересуюсь новым, развиваю в себе новые качества и навыки</p>   
+
+ <hr>
+
+<h2>Мои соцыальные сети</h2>
+<p><strong>Ссылка на мой телеграм </strong></p>
+<ul>
+<li><a href="https://t.me/alonashablynska" "https://t.me/alonashablynska">Telegram</a></li>
+
+
+<hr>
+
+</ul>
+<h2>Мои хобби</h2>
+<li>Занятия спортом</li>
+<li>Езда на велосипеде</li>
+<li>Рисую картины</li>
+<li>Чтение книг</li>
+
+<hr>
+<h2> Мои профессиональные навыки </h2>
+<p> Знакома с HTML и CSS</p>
+<p> Умею работать в среде разработки таких как Visual Studio Code и IJ </p>
+<p> Прохожу обучение на платформе Skillbox, направление Java-разработчик</p>
+<p> Окончила курс обуния на платформе Result.School</p>
+<hr>
+
+
+<hr>
+<br>
+<h3>Связаться со мной</h3>
+
+<form action="обработчик.php" method="POST">
+    <input type="text" name="имя" placeholder="Имя"><br>
+    <input type="email" name="email" placeholder="Email"><br>
+    <textarea name="сообщение" placeholder="Сообщение"></textarea><br>
+    <button type="submit">Отправить</button>
+  </form>
+  
+  
+  <?php
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["имя"];
+    $email = $_POST["email"];
+    $message = $_POST["сообщение"];
+  
+    // Настройте адрес получателя
+    $to = "shablynskaalona@gmail.com";
+  
+    // Настройте тему и содержимое письма
+    $subject = "Новое сообщение формы";
+    $body = "Имя: $name\nEmail: $email\Сообщение: $message";
+  
+    // Отправка письма
+    mail("shablynskaalona@gmail.com"),
+  
+    // Перенаправление пользователя после отправки формы
+    header("Location: подтверждение.html");
+  }
+  ?>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
